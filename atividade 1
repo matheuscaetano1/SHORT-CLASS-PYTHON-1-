@@ -1,16 +1,18 @@
-atividad 1  Faça um programa que peça um valor monetário e diminua-o em 15%. Seu
-programa deve imprimir a mensagem “O novo valor é [valor]”
+ atividade 1 
+ Faça um programa que peça um valor monetário e diminua-o em 15%. Seu
+programa deve imprimir a mensagem “O novo valor é [valor]”.
+
+valor_celular = int(input('Qual o valor do celular comprado?'))
+valor_celular = float(valor_celular)
+
+desconto_celular = valor_celular - (valor_celular * 15/100)
+desconto_celular = float(desconto_celular)
+
+print('Você tem um desconto de 15%...')
+
+print ("O novo valor do celular comprado é de:", desconto_celular)
 
 
-idade = int (input("Qual a sua idade?"))
-salario = float (input('Qaul o seu salario?')
-sexo = input ('Qual o seu sexo?'). upper()
-if idade >= 150 or idade <= 0:
-    print('ERROR, idade invalida')
-if salario <= 0:
-    print('ERROR, salario invalido')
-if sexo != 'M' and sexo != 'F' and sexo != 'OUTRO':
-    print('ERROR, sexo invalido')
     
     atividade  2
      Faça um programa que leia a validade das informações:
