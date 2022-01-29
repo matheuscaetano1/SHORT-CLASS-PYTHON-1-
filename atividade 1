@@ -1,0 +1,88 @@
+atividad 1  Faça um programa que peça um valor monetário e diminua-o em 15%. Seu
+programa deve imprimir a mensagem “O novo valor é [valor]”
+
+
+idade = int (input("Qual a sua idade?"))
+salario = float (input('Qaul o seu salario?')
+sexo = input ('Qual o seu sexo?'). upper()
+if idade >= 150 or idade <= 0:
+    print('ERROR, idade invalida')
+if salario <= 0:
+    print('ERROR, salario invalido')
+if sexo != 'M' and sexo != 'F' and sexo != 'OUTRO':
+    print('ERROR, sexo invalido')
+    
+    atividade  2
+     Faça um programa que leia a validade das informações:
+a. Idade: entre 0 e 150;
+b. Salário: maior que 0;
+c. Sexo: M, F ou Outro;
+O programa deve imprimir uma mensagem de erro para cada informação
+inválida.
+    
+    
+    idade = int (input("Qual a sua idade?"))
+salario = float (input('Qaul o seu salario?'))
+sexo = input ('Qual o seu sexo?'). upper()
+if idade >= 150 or idade <= 0:
+    print('ERROR, idade invalida')
+if salario <= 0:
+    print('ERROR, salario invalido')
+if sexo != 'M' and sexo != 'F' and sexo != 'OUTRO':
+    print('ERROR, sexo invalido')
+    
+    atividade 3  
+    Vamos fazer um programa para verificar quem é o assassino de um crime.
+Para descobrir o assassino, a polícia faz um pequeno questionário com 5
+perguntas onde a resposta só pode ser sim ou não:
+a. Mora perto da vítima?
+b. Já trabalhou com a vítima?
+c. Telefonou para a vítima?
+d. Esteve no local do crime?
+e. Devia para a vítima?
+Cada resposta sim dá um ponto para o suspeito. A polícia considera que os
+suspeitos com 5 pontos são os assassinos, com 4 a 3 pontos são cúmplices e
+2 pontos são apenas suspeitos, necessitando outras investigações. Valores
+iguais ou abaixo de 1 são liberados
+    
+    
+    
+    print('=' *50)
+print('PROCURANDO O ASSASSINO')
+print('=' *50)
+print('Se a resposta for afirmativa o suspeito ganhará 1 ponto. Obs responda somente com [S/N]')
+pergunta1 = input('Mora perto da vitima?').upper()
+pergunta2 = input('Já trabalhou com a vitima?').upper()
+pergunta3 = input('Telefonou para a vitima?'). upper()
+pergunta4 = input('Esteve no lugar do cime?'). upper()
+pergunta5 = input('Devia para a vitima?'). upper()
+c = 0
+if pergunta1 == 'S':
+    c = c + 1
+if pergunta2 == 'S':
+    c = c + 1
+if pergunta3 == 'S':
+    c = c + 1
+if pergunta4 == 'S':
+    c = c + 1
+if pergunta5 == 'S':
+    c = c + 1
+if c == 5:
+    print('Caso resolvido! Encontramos o assassino')
+elif c == 4 or c == 3:
+    print('Você é um dos cumplices, nos entregue o assassino agora!')
+elif  c == 2:
+    print('Aguarde, vamos analisar um pouco mais')
+    
+elif c ==1 or c== 0:
+    print('Você está liberado!')
+    
+    
+    atividade 4 
+  Faça um programa que imprima a tabuada do 9 (de 9*1 a 9*10) usando loops.  
+    
+    print('Tabuada personalizada')
+num = int(input('Escolha um número para gerar sua tabuada: '))
+num2 = int(input('Esscolha um número para gerar o tamanho da tabuada: '))
+for i in range(1, num2 + 1):
+    print('{} x {} = {}'.format(num, i, num * i))
